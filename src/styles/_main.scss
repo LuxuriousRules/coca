@@ -1,0 +1,19 @@
+.main__{
+    overflow-x: hidden !important;
+}
+
+.main__banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    
+&--video {
+    object-fit: cover; // чтобы видео заполняло блок
+    z-index: -1;
+    width: 100%;
+    max-width: 100%;
+      
+}
+}
