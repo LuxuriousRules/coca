@@ -1,12 +1,18 @@
+@use './variables' as *;
+
+
 .main__{
     overflow-x: hidden !important;
 }
 
 .main__banner{
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100%; margin-top: 0.1vh;
+    
+    
     
     
 &--video {
@@ -17,3 +23,27 @@
       
 }
 }
+
+.main__overlay{
+    position: absolute;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 19px; 
+}
+
+.main__btn {
+    text-decoration: none;
+    border: 1px solid  $color-touch;
+    background-color:rgba(0, 0, 0, 0.614) ;
+    color: white;
+    border-radius: 5px;
+    padding: 1vh;
+    cursor: pointer;
+    transition: transform 0.5s ease, background 0.5s ease;
+}
+
+.main__btn:active {
+    background: $color-touch;
+    transform: scale(0.96);
+}
+
