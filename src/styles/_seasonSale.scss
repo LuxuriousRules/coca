@@ -1,0 +1,47 @@
+@use './variables' as *;
+
+.seasonSale{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-color ;
+    font-family: $font-text; 
+    padding: 0 2.5vw;
+
+.seasonSale__wrapp{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-left: 4vw; 
+}
+
+
+.seasonSale__title{
+    font-size: xx-large;
+    margin-bottom: 2vh;
+}
+
+.seasonSale__subtitle{
+    margin-top: 0;
+}
+
+.seasonSale__link{
+    font-size: large;
+    border: 1px solid $color-touch;
+    background-color: $background-colorBtn ;
+    padding: 1vh; border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 1vh;
+    cursor: pointer;
+    transition: transform 0.5s ease, background 0.5s ease;
+}
+
+.seasonSale__link:active{
+    background: $color-touch;
+    transform: scale(0.96);
+}
+
+}
+

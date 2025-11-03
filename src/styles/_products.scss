@@ -1,0 +1,82 @@
+@use './variables' as *;
+
+
+.products{
+    overflow-x: hidden;
+    margin: 0 3.5vw;
+}
+
+
+.products__wrapp{
+    display: flex;
+    justify-content: center;
+
+.products__title{
+    font-family: $font-text ;
+    font-size: xx-large;
+}
+}
+
+.products__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    
+.product__img{
+    width: 100%;
+    height: auto;
+}
+
+.product__text {
+    font-family: $font-text;
+    font-size: x-large;
+}
+
+a{
+   text-decoration: none;
+   color: black;
+   cursor: pointer;
+   transition: transform 0.5s ease, background 0.5s ease; 
+}
+
+a:hover{
+   background: $color-touch;
+   transform: scale(0.96);
+}   
+
+}
+
+.productSeason{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    
+.productSeason__img{
+    width: 100%;
+    height: auto;
+}    
+
+.productSeason__text{
+    font-family: $font-text;
+    font-size: x-large;
+}
+
+a{
+   text-decoration: none;
+   color: black;
+   cursor: pointer;
+   transition: transform 0.5s ease, background 0.5s ease; 
+}
+
+a:hover{
+   background: $color-touch;
+   transform: scale(0.96);
+}   
+
+
+}
+

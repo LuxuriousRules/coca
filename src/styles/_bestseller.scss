@@ -1,0 +1,62 @@
+@use './variables' as *;
+
+.bestseller{
+    background-color: $background-color;
+
+&__head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+&__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bestseller__title{
+    font-family: $font-text;
+    font-size: xx-large;
+    margin-bottom: 1.5vh;
+}
+
+.bestseller__subtitle{
+    font-family: $font-text;
+    margin-top: 0;
+}
+
+
+
+.bestseller__link{
+    font-size: large;
+    border: 1px solid $color-touch;
+    background-color: $background-colorBtn ;
+    padding: 1vh; border-radius: 5px;
+    text-decoration: none;
+    font-family: $font-text;
+    color: white;
+    margin-bottom: 1vh;
+    cursor: pointer;
+    transition: transform 0.5s ease, background 0.5s ease;
+}
+
+.bestseller__link:active{
+    background: $color-touch;
+    transform: scale(0.96);
+}
+
+
+}
+
+.bestseller-item{
+    overflow-x: hidden;
+    width: 100%;
+
+.bestseller-item__banner{
+    width: 100%;
+}
+
+}
