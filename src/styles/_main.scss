@@ -47,3 +47,55 @@
     transform: scale(0.96);
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__banner {
+    margin-top: 1vh; // чуть больше отступ сверху
+    height: 60%;
+    display: block;    // фиксируем высоту баннера для планшета
+  }
+
+  .main__banner--video {
+    height: 80vh;
+    object-fit: cover;
+  }
+
+  .main__overlay {
+    font-size: xx-large;   // увеличиваем текст
+    max-width: 100%;    // ограничиваем ширину текста
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); // центрируем по экрану
+  }
+
+  .main__btn {
+    font-size: 2.1rem;
+    padding: 1.2vh 2vw; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .main__banner {
+    margin-top: 0;      
+    height: 100%;
+    display: block;
+  }
+
+  .main__banner--video {
+    height: 90vh;
+    object-fit: cover;
+  }
+
+  .main__overlay {
+    font-size: 2rem;    
+    max-width: 60%;     
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .main__btn {
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem; 
+    border-radius: 6px;
+  }
+}

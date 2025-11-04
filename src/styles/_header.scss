@@ -62,3 +62,66 @@ a{
 
 }
  
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nav {
+    justify-content: space-between;
+    height: 8vh;
+    padding: 0 4vw;
+    gap: 0;
+  }
+
+  .nav__burger {
+    display: flex; 
+    margin-left: 1vw;
+  }
+
+  .nav__title {
+    font-size: 5vw; 
+  }
+
+  .nav__menu {
+    width: 300px;       
+    height: 60vh;
+    gap: 8vh;
+
+    a {
+      font-size: 1.5rem; 
+    }
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .nav {
+    justify-content: space-between; 
+    height: 10vh;                   
+    gap: 0;                         
+    padding: 0 5vw;                 
+  }
+
+  .nav__burger {
+    display: none; 
+  }
+
+  .nav__title {
+    font-size: 2.5vw; 
+  }
+
+  .nav__menu {
+    position: static;   
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    background: transparent;
+    gap: 5vw;
+    transition: none;   
+    align-items: center;
+
+    a {
+      color: black;     
+      font-size: 1.2rem;
+    }
+  }
+}
