@@ -80,3 +80,62 @@ a:hover{
 
 }
 
+
+
+
+
+.products__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-text;
+}
+
+#products{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 3vh; 
+  
+  
+
+
+.products__title,
+.products__description{
+    font-family: $font-text;
+    font-size: x-large;
+    margin-bottom: 0;
+
+}
+
+.produckts__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1.5vh; 
+    
+}
+
+.buy-btn{
+    text-decoration: none;
+    border: 1px solid  $color-touch;
+    background-color:rgba(0, 0, 0, 0.614) ;
+    color: white;
+    border-radius: 5px;
+    font-size: x-large;
+    width: 40vw;
+    padding: 1vh;
+    cursor: pointer;
+    transition: transform 0.5s ease, background 0.5s ease;
+}
+
+.buy-btn:active{
+    background: $color-touch;
+    transform: scale(0.96);
+}
+
+}
+
